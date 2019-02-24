@@ -1,3 +1,7 @@
+## v2.0.1
+
+* Fix the embedded standard library issue [#32](https://github.com/polydice/ICInputAccessory/pull/32)
+
 ## v2.0.0
 
 * Drop Class Name Prefixes

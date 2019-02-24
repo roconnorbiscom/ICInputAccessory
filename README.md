@@ -19,7 +19,7 @@ Customized text fields used in the [iCook app](https://itunes.apple.com/app/id55
 * Customizable icon and colors.
 * Supports storyboard.
 
-![ICTokenField](https://polydice.github.io/ICInputAccessory/screenshots/ICTokenField.gif)
+![ICTokenField](https://raw.githubusercontent.com/polydice/ICInputAccessory/master/screenshots/ICTokenField.gif)
 
 ### OptionPickerControl
 
