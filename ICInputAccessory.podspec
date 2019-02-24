@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "ICInputAccessory"
-  s.version       = "2.0.0"
+  s.version       = "2.0.1"
   s.summary       = "A customized token text field used in the iCook app."
   s.description   = <<-DESC
                      KeyboardDismissTextField:
@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
                      * An easy to use UIControl that displays a UIPickerView with given options.
                     DESC
 
-  s.screenshots   = "https://polydice.github.io/ICInputAccessory/screenshots/ICTokenField.png",
-                    "https://polydice.github.io/ICInputAccessory/screenshots/ICKeyboardDismissTextField.png"
+  s.screenshots   = "https://raw.githubusercontent.com/polydice/ICInputAccessory/master/screenshots/ICTokenField.png",
+                    "https://raw.githubusercontent.com/polydice/ICInputAccessory/master/screenshots/ICKeyboardDismissTextField.png"
   s.homepage      = "https://github.com/polydice/ICInputAccessory"
   s.license       = { type: "MIT", file: "LICENSE" }
   s.authors       = "bcylin", "trisix"
