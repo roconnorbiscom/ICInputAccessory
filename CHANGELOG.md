@@ -1,6 +1,7 @@
 ## Unreleased
 
 * Update CI infrastructure to GitHub Actions
+* Swift 5.0
 
 ## v2.0.1
 
