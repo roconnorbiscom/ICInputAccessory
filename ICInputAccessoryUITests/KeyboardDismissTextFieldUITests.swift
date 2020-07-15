@@ -26,6 +26,13 @@
 
 import XCTest
 
+extension XCUIElement {
+  func waitAndForceTap(timeout: TimeInterval = 5000) {
+      XCTAssert(waitForExistence(timeout: timeout))
+      coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
+  }
+}
+
 class KeyboardDismissTextFieldUITests: XCTestCase {
 
   private lazy var app = XCUIApplication()
@@ -38,13 +45,13 @@ class KeyboardDismissTextFieldUITests: XCTestCase {
 
   func testKeyboardDismissing() {
     app.tables.textFields["KeyboardDismissTextField"].tap()
-    app.buttons["Dismiss Keyboard"].tap()
+    app.buttons["Dismiss Keyboard"].waitAndForceTap()
   }
 
   func testStoryboard() {
     app.tables.buttons["Storyboard"].tap()
     app.tables.textFields["Storyboard KeyboardDismissTextField"].tap()
-    app.buttons["Dismiss Keyboard"].tap()
+    app.buttons["Dismiss Keyboard"].waitAndForceTap()
     app.tables.buttons["Back to Code"].tap()
   }
 
