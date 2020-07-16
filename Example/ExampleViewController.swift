@@ -146,7 +146,9 @@ class ExampleViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     switch showcases[indexPath.section] {
     case is CustomizedTokenField.Type:
-      present(UINavigationController(rootViewController: CustomizedTokenViewController()), animated: true, completion: nil)
+      let controller = UINavigationController(rootViewController: CustomizedTokenViewController())
+      controller.modalPresentationStyle = .fullScreen
+      present(controller, animated: true, completion: nil)
     case is OptionPickerControl<Language>.Type:
       tableView.deselectRow(at: indexPath, animated: true)
       languagePicker.becomeFirstResponder()
@@ -159,6 +161,7 @@ class ExampleViewController: UITableViewController {
 
   @objc fileprivate func showStoryboard(_ sender: UIButton) {
     if let controller = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController() {
+      controller.modalPresentationStyle = .fullScreen
       controller.modalTransitionStyle = .flipHorizontal
       present(controller, animated: true, completion: nil)
     }
