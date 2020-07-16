@@ -56,7 +56,7 @@ class TokenFieldUITests: XCTestCase {
   }
 
   func testTokenField() {
-    let textField = app.tables.cells.containing(.staticText, identifier: "TokenField").children(matching: .textField).element
+    let textField = app.tables.cells.textFields["TokenField"]
     typeTexts(in: textField)
   }
 
@@ -68,7 +68,7 @@ class TokenFieldUITests: XCTestCase {
 
   func testStoryboard() {
     app.tables.buttons["Storyboard"].tap()
-    let tokenField = app.tables.cells.containing(.staticText, identifier: "Storyboard TokenField").children(matching: .textField).element
+    let tokenField = app.tables.cells.textFields["Storyboard TokenField"]
     typeTexts(in: tokenField)
     app.tables.buttons["Back to Code"].tap()
   }

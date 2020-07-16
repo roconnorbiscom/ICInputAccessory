@@ -110,6 +110,7 @@ open class TokenField: UIView, UITextFieldDelegate, BackspaceTextFieldDelegate {
         return
       }
       placeholderLabel.attributedText = attributedText
+      textField.accessibilityLabel = attributedText.string
 
       if placeholderLabel.superview != nil { return }
       insertSubview(placeholderLabel, belowSubview: scrollView)

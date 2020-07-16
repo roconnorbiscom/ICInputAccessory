@@ -2,7 +2,7 @@
 
 Customized text fields used in the [iCook app](https://itunes.apple.com/app/id554065086).
 
-[![Build Status](https://travis-ci.org/polydice/ICInputAccessory.svg)](https://travis-ci.org/polydice/ICInputAccessory)
+![Build Status](https://github.com/polydice/ICInputAccessory/workflows/iOS%20build/badge.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/ICInputAccessory.svg)](https://cocoapods.org/pods/ICInputAccessory)
 ![Platform](https://img.shields.io/cocoapods/p/ICInputAccessory.svg)
