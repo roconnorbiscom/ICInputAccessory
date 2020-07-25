@@ -6,7 +6,7 @@ Customized text fields used in the [iCook app](https://itunes.apple.com/app/id55
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/ICInputAccessory.svg)](https://cocoapods.org/pods/ICInputAccessory)
 ![Platform](https://img.shields.io/cocoapods/p/ICInputAccessory.svg)
-![Swift 4.1](https://img.shields.io/badge/Swift-4.1-orange.svg)
+![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg)
 
 ### KeyboardDismissTextField
 
@@ -36,6 +36,7 @@ ICInputAccessory | iOS  | Xcode | Swift
 `~> 1.4.0`       | 8.0+ | 8.3   | ![Swift 3.1](https://img.shields.io/badge/Swift-3.1-orange.svg)
 `~> 1.5.0`       | 8.0+ | 9.3   | ![Swift 4.1](https://img.shields.io/badge/Swift-4.1-orange.svg)
 `~> 2.0.0`       | 8.0+ | 10.0  | ![Swift 4.1](https://img.shields.io/badge/Swift-4.1-orange.svg)
+`develop`        | 8.0+ | 11.1  | ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
 
 ## Installation
 
