@@ -31,7 +31,7 @@ internal class Token: UIView {
   var text = "" {
     didSet {
       updateTextLabel()
-      frame = CGRect(origin: CGPoint.zero, size: systemLayoutSizeFitting(UIView.layoutFittingCompressedSize))
+      frame = CGRect(origin: CGPoint.zero, size: systemLayoutSizeFitting(UILayoutFittingCompressedSize))
     }
   }
 
