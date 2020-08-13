@@ -414,7 +414,7 @@ open class TokenField: UIView, UITextFieldDelegate, BackspaceTextFieldDelegate {
     let views = ["wrapper": scrollView]
     addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[wrapper]|", options: [], metrics: nil, views: views))
     addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[wrapper]|", options: [], metrics: nil, views: views))
-    leftEdgeConstraint.isActive = true
+    leftEdgeConstraint.isActive = false
 
     layoutTokenTextField()
     addGestureRecognizer(tapGestureRecognizer)
