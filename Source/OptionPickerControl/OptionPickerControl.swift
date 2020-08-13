@@ -52,7 +52,7 @@ open class OptionPickerControl<T: OptionDescriptive>: UIControl, UIPickerViewDat
     didSet {
       if hiddenTextField.isFirstResponder {
         sendActions(for: .valueChanged)
-      } else if let index = options.index(of: selectedOption) {
+      } else if let index = options.firstIndex(of: selectedOption) {
         picker.selectRow(index, inComponent: 0, animated: false)
       }
     }
