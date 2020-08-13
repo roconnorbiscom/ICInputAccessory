@@ -116,7 +116,7 @@ open class TokenField: UIView, UITextFieldDelegate, BackspaceTextFieldDelegate {
       placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
       placeholderLabel.setContentHuggingPriority(UILayoutPriority(rawValue: UILayoutPriority.defaultLow.rawValue - 1), for: .horizontal)
       addConstraint(NSLayoutConstraint(item: placeholderLabel, attribute: .leading, relatedBy: .equal, toItem: scrollView, attribute: .leading, multiplier: 1, constant: 0))
-      addConstraint(NSLayoutConstraint(item: placeholderLabel, attribute: .trailing, relatedBy: .greaterThanOrEqual, toItem: scrollView, attribute: .trailing, multiplier: 1, constant: 10))
+      addConstraint(NSLayoutConstraint(item: placeholderLabel, attribute: .trailing, relatedBy: .greaterThanOrEqual, toItem: scrollView, attribute: .trailing, multiplier: 1, constant: 0))
       addConstraint(NSLayoutConstraint(item: placeholderLabel, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
     }
   }
@@ -187,7 +187,7 @@ open class TokenField: UIView, UITextFieldDelegate, BackspaceTextFieldDelegate {
       if let icon = leftView {
         addSubview(icon)
         icon.translatesAutoresizingMaskIntoConstraints = false
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[icon]-10-[wrapper]", options: [], metrics: nil, views: ["icon": icon, "wrapper": scrollView]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[icon]-10-[wrapper]", options: [], metrics: nil, views: ["icon": icon, "wrapper": scrollView]))
         addConstraint(NSLayoutConstraint(item: icon, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
       }
     }
@@ -206,7 +206,7 @@ open class TokenField: UIView, UITextFieldDelegate, BackspaceTextFieldDelegate {
   }()
 
   private lazy var leftEdgeConstraint: NSLayoutConstraint = {
-    NSLayoutConstraint(item: self.scrollView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 10)
+    NSLayoutConstraint(item: self.scrollView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0)
   }()
 
   private lazy var tapGestureRecognizer: UITapGestureRecognizer = {
