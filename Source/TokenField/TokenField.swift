@@ -412,7 +412,7 @@ open class TokenField: UIView, UITextFieldDelegate, BackspaceTextFieldDelegate {
     scrollView.translatesAutoresizingMaskIntoConstraints = false
 
     let views = ["wrapper": scrollView]
-    addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(>=10)-[wrapper]|", options: [], metrics: nil, views: views))
+    addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[wrapper]|", options: [], metrics: nil, views: views))
     addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[wrapper]|", options: [], metrics: nil, views: views))
     leftEdgeConstraint.isActive = true
 
